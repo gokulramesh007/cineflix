@@ -16,4 +16,4 @@ This project covers the concepts specified below,
     UnitTesting
         - Jest
 
-I've also tried implementing the same project without using create-react-app. You can find that in the feature/webpack branch
+I've also tried implementing the same project without using create-react-app. You can find that in the feature/custom-webpack-implementation branch
