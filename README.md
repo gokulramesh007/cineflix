@@ -6,6 +6,7 @@ This project covers the concepts specified below,
 
     Hooks
         - useCallback
+        - useEffect
         - useRef
         - useState
         - useReducer
