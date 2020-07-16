@@ -1,6 +1,5 @@
 import { checkForPrize } from "./lotteryService";
 import { getMovies } from "./movieService";
-import { getBookingPreferences } from "./preferenceService";
-import { reserveBooking } from "./bookingService";
+import { getBookingPreferences, reserveBooking } from "./reserveService";
 
 export { checkForPrize, getMovies, getBookingPreferences, reserveBooking };
