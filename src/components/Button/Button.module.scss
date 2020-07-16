@@ -1,0 +1,79 @@
+/* Button CSS - START */
+
+@import "../../constants/_variables.scss";
+
+.button {
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-family: 'IBM Plex Sans', sans-serif;
+  border-radius: 0;
+  color: $white;
+  &.purple {
+    &.dark {
+      background-color: $button-purple;
+      border: 1px solid $button-purple;
+      &:hover {
+        background-color: $white;
+        color: $button-purple;
+      }
+    }
+    &.light {
+      background-color: $white;
+      border: 1px solid $button-purple;
+      color: $button-purple;
+      &:hover {
+        background-color: $button-purple;
+        color: $white;
+      }
+    }
+  }
+  &.yellow {
+    &.dark {
+      background-color: $button-yellow;
+      border: 1px solid $button-yellow;
+      &:hover {
+        background-color: $white;
+        color: $button-yellow;
+      }
+    }
+    &.light {
+      background-color: $white;
+      border: 1px solid $button-yellow;
+      color: $button-yellow;
+      &:hover {
+        background-color: $button-yellow;
+        color: $white;
+      }
+    }
+  }
+  &.large {
+    width: 100%;
+    font-size: $regular;
+  }
+  &.medium {
+    width: 50%;
+    padding: 7px 10px;
+    font-size: $smaller;
+  }
+  &.small {
+    width: 15%;
+    font-size: $tiny;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .button {
+    &.medium {
+      width: 100%;
+    }
+    &.small {
+      width: 100%;
+    }
+  }
+}
+/* Button CSS - END */

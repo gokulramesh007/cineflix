@@ -1,0 +1,47 @@
+@import "../../constants/_variables.scss";
+
+.tripzoneContainer {
+  &.green {
+    background-color: $container-green;
+  }
+  &.large {
+    width: 100%;
+  }
+  &.medium {
+    width: 75%;
+  }
+  &.small {
+    width: 50%;
+  }
+  &.tiny {
+    width: 25%;
+  }
+  &.largePadding {
+    padding: 200px;
+  }
+  &.mediumPadding {
+    padding: 100px;
+  }
+  &.smallPadding {
+    padding: 50px;
+  }
+  &.tinyPadding {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .tripzoneContainer {
+    &.largePadding {
+      padding: 25px;
+    }
+    &.mediumPadding {
+      padding: 15px;
+    }
+    &.smallPadding {
+      padding: 10px;
+    }
+    &.tinyPadding {
+      padding: 5px;
+    }
+  }
+}
