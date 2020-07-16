@@ -1,6 +1,18 @@
 import { appAxios } from "../utils";
 import { Strings } from "../constants";
 
+export const getBookingPreferences = async () => {
+  try {
+    const response = await appAxios.get(
+      Strings.APPLICATION.END_POINTS.PREFERENCES,
+      {}
+    );
+    return response.data;
+  } catch (error) {
+    console.log("Error - reserveService -> getBookingPreferences : ", error);
+  }
+};
+
 export const reserveBooking = async (language, food, parking) => {
   try {
     const response = await appAxios.get(
@@ -15,6 +27,7 @@ export const reserveBooking = async (language, food, parking) => {
     );
     return response.data;
   } catch (error) {
-    console.log("Error - bookingService -> reserveBooking : ", error);
+    console.log("Error - reserveService -> reserveBooking : ", error);
   }
 };
+
