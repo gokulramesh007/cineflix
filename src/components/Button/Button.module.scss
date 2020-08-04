@@ -1,0 +1,84 @@
+/* Button CSS - START */
+
+@import "../../constants/_variables.scss";
+
+.button {
+  padding: 5px 10px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  border-radius: 0;
+  color: $white;
+  &.purple {
+    &.dark {
+      background-color: $button-primary;
+      border: 1px solid $button-primary;
+      &:hover {
+        background-color: $button-primary-glow;
+        border: 1px solid $button-primary-glow;
+      }
+    }
+    &.light {
+      background-color: $white;
+      border: 1px solid $button-primary;
+      color: $button-primary;
+      &:hover {
+        background-color: $button-primary;
+        color: $white;
+      }
+    }
+  }
+  &.yellow {
+    &.dark {
+      background-color: $button-secondary;
+      border: 1px solid $button-secondary;
+      &:hover {
+        background-color: $button-secondary-glow;
+        border: 1px solid $button-secondary-glow;
+      }
+    }
+    &.light {
+      background-color: $white;
+      border: 1px solid $button-secondary;
+      color: $button-secondary;
+      &:hover {
+        background-color: $button-secondary;
+        color: $white;
+      }
+    }
+  }
+  &.large {
+    width: 100%;
+  }
+  &.medium {
+    width: 50%;
+  }
+  &.small {
+    width: 35%;
+  }
+  &.tiny {
+    width: 10%;
+  }
+  &.custom{
+    width: 150px;
+    padding: 10px 20px;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .button {
+    &.medium {
+      width: 100%;
+    }
+    &.small {
+      width: 100%;
+    }
+    &.custom{
+      width: 100px;
+    }
+  }
+}
+/* Button CSS - END */

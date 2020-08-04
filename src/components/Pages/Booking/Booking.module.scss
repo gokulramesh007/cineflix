@@ -1,0 +1,11 @@
+@import "../../../constants/_variables.scss";
+
+.bookingWrapper {
+  overflow-y: scroll;
+  margin: 10px 0;
+  .title {
+    margin: 20px 0;
+    font-size: $medium;
+    font-weight: 500;
+  }
+}

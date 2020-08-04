@@ -1,0 +1,30 @@
+@import "../../../constants/_variables.scss";
+
+.movieDescWrapper {
+  overflow-y: scroll;
+  height: 100%;
+  margin: 10px 0;
+  .viewsWrapper {
+    margin: 10px 0;
+    color: $theme-bg-one;
+    font-size: $small;
+  }
+  .description {
+    font-size: $medium;
+    font-weight: 200;
+  }
+  .title {
+    margin: 20px 0 5px;
+    color: $theme-bg-one;
+    font-size: $regular17;
+  }
+  .imageWrapper {
+    margin: 10px 0;
+    width: 150px;
+    height: 180px;
+  }
+  .actors {
+    font-size: $small;
+    font-weight: 200;
+  }
+}

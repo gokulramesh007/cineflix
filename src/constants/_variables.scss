@@ -1,0 +1,47 @@
+$mobile-width: 990px;
+
+// @mixin mobile {
+//   @media only screen and (max-width: #{$mobile-width}) {
+//     @content;
+//   }
+// }
+
+/* Color Variables Declaration - START */
+
+$white: #fff;
+$black: #444;
+$theme-pink: #f14c58;
+$theme-bg-one: #8fbdbf;
+$theme-bg-two: #457b9d;
+$theme-bg-three: #1d3557;
+$button-primary: #1d3557;
+$button-primary-glow: #39629c;
+$button-secondary: #f14c58;
+$button-secondary-glow: #fd5865;
+$loader-overlay: rgba(246, 246, 246, 0.5);
+
+/* Color Variables Declaration - END */
+
+/* Font Variables Declaration - START */
+
+$extraLarge: 70px;
+$h1: 50px;
+$h2: 45px;
+$h3: 35px;
+$h4: 28px;
+$large: 23px;
+$h5: 20px;
+$h6: 19px;
+$input: 18px;
+$regular17: 17px;
+$regular: 16px;
+$regular15: 15px;
+$medium: 14px;
+$smallMedium: 13px;
+$small: 12px;
+$smaller: 10px;
+$tiny: 8px;
+$minute: 6px;
+$space_large: 7px;
+
+/* Font Variables Declaration - END */
