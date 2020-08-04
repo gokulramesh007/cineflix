@@ -1,0 +1,25 @@
+/* LOADER CSS - START */
+@import "../../constants/_variables.scss";
+
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $loader-overlay;
+  width: 100vw;
+  height: 100vh;
+  .loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    max-width: 150px;
+    max-height: 150px;
+    margin-top: -75px;
+    margin-left: -75px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+/* LOADER CSS - END */

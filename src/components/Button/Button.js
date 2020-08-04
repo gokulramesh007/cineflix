@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Button.module.scss";
 
-function Button({ text, size, color, theme, disabled, onClick }) {
+const Button = ({ text, size, color, theme, disabled, onClick }) => {
   const buttonStyles = `${styles.button} ${styles[color] || ""} ${styles[theme] || ""} ${styles[
     size
   ] || ""}`;
@@ -21,7 +21,7 @@ Button.defaultProps = {
   text: "Search",
   color: "yellow",
   theme: "dark",
-  size: "",
+  size: "large",
   disabled: false
 };
 
@@ -33,4 +33,4 @@ Button.propTypes = {
   disabled: PropTypes.bool
 };
 
-export default Button;
+export default React.memo(Button);

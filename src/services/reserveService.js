@@ -16,7 +16,7 @@ export const getBookingPreferences = async () => {
 export const reserveBooking = async (language, food, parking) => {
   try {
     const response = await appAxios.get(
-      Strings.APPLICATION.END_POINTS.LOTTERY,
+      Strings.APPLICATION.END_POINTS.BOOK,
       {
         params: {
           language: language,
@@ -30,4 +30,3 @@ export const reserveBooking = async (language, food, parking) => {
     console.log("Error - reserveService -> reserveBooking : ", error);
   }
 };
-

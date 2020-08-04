@@ -4,60 +4,62 @@
 
 .button {
   padding: 5px 10px;
-  text-transform: uppercase;
   font-family: 'IBM Plex Sans', sans-serif;
   border-radius: 0;
   color: $white;
   &.purple {
     &.dark {
-      background-color: $button-purple;
-      border: 1px solid $button-purple;
+      background-color: $button-primary;
+      border: 1px solid $button-primary;
       &:hover {
-        background-color: $white;
-        color: $button-purple;
+        background-color: $button-primary-glow;
+        border: 1px solid $button-primary-glow;
       }
     }
     &.light {
       background-color: $white;
-      border: 1px solid $button-purple;
-      color: $button-purple;
+      border: 1px solid $button-primary;
+      color: $button-primary;
       &:hover {
-        background-color: $button-purple;
+        background-color: $button-primary;
         color: $white;
       }
     }
   }
   &.yellow {
     &.dark {
-      background-color: $button-yellow;
-      border: 1px solid $button-yellow;
+      background-color: $button-secondary;
+      border: 1px solid $button-secondary;
       &:hover {
-        background-color: $white;
-        color: $button-yellow;
+        background-color: $button-secondary-glow;
+        border: 1px solid $button-secondary-glow;
       }
     }
     &.light {
       background-color: $white;
-      border: 1px solid $button-yellow;
-      color: $button-yellow;
+      border: 1px solid $button-secondary;
+      color: $button-secondary;
       &:hover {
-        background-color: $button-yellow;
+        background-color: $button-secondary;
         color: $white;
       }
     }
   }
   &.large {
     width: 100%;
-    font-size: $regular;
   }
   &.medium {
     width: 50%;
-    padding: 7px 10px;
-    font-size: $smaller;
   }
   &.small {
-    width: 15%;
-    font-size: $tiny;
+    width: 35%;
+  }
+  &.tiny {
+    width: 10%;
+  }
+  &.custom{
+    width: 150px;
+    padding: 10px 20px;
   }
   &:focus {
     outline: none;
@@ -73,6 +75,9 @@
     }
     &.small {
       width: 100%;
+    }
+    &.custom{
+      width: 100px;
     }
   }
 }

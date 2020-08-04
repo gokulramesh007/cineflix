@@ -10,10 +10,15 @@ $mobile-width: 990px;
 
 $white: #fff;
 $black: #444;
-$container-green: #3ade26;
-$button-purple: rgb(141,21,251);
-$button-yellow: #f3a619;
-$loader-overlay: rgba(246, 246, 246, 0.2);
+$theme-pink: #f14c58;
+$theme-bg-one: #8fbdbf;
+$theme-bg-two: #457b9d;
+$theme-bg-three: #1d3557;
+$button-primary: #1d3557;
+$button-primary-glow: #39629c;
+$button-secondary: #f14c58;
+$button-secondary-glow: #fd5865;
+$loader-overlay: rgba(246, 246, 246, 0.5);
 
 /* Color Variables Declaration - END */
 
@@ -21,9 +26,9 @@ $loader-overlay: rgba(246, 246, 246, 0.2);
 
 $extraLarge: 70px;
 $h1: 50px;
-$h2: 40px;
-$h3: 30px;
-$h4: 26px;
+$h2: 45px;
+$h3: 35px;
+$h4: 28px;
 $large: 23px;
 $h5: 20px;
 $h6: 19px;

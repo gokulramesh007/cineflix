@@ -1,8 +1,8 @@
 @import "../../constants/_variables.scss";
 
 .tripzoneContainer {
-  &.green {
-    background-color: $container-green;
+  &.pink{
+    background-color: $theme-pink;
   }
   &.large {
     width: 100%;
