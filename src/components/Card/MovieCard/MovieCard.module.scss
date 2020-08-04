@@ -1,0 +1,35 @@
+@import "../../../constants/_variables.scss";
+.movieCardWrapper {
+  display: flex;
+  flex-direction: column;
+  .imageWrapper {
+    height: 200px;
+    img {
+      height: 100%;
+    }
+  }
+  .details {
+    margin: 5px 0;
+    .title {
+      font-size: $medium;
+    }
+    .info {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+      .like,
+      .visit {
+        font-size: $small;
+      }
+      .like {
+        color: $theme-pink;
+      }
+      .visit {
+        color: $theme-bg-one;
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

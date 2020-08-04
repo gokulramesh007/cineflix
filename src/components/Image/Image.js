@@ -3,7 +3,7 @@ import { Images } from "../../constants";
 import PropTypes from "prop-types";
 import { image } from "./Image.module.scss";
 
-function Image({ source, altText, fallbackImage }) {
+const Image = ({ source, altText, fallbackImage }) => {
   const addDefaultSrc = event => {
     event.target.src = fallbackImage || Images.POSTER_NOT_FOUND;
   };
@@ -24,4 +24,4 @@ Image.propTypes = {
   fallbackImage: PropTypes.string
 };
 
-export default Image;
+export default React.memo(Image);

@@ -2,8 +2,9 @@ import { appAxios } from "../utils";
 import { Strings } from "../constants";
 
 export const checkForPrize = async mobileNo => {
+  let response;
   try {
-    const response = await appAxios.get(
+    response = await appAxios.get(
       Strings.APPLICATION.END_POINTS.LOTTERY,
       {
         params: {
@@ -11,8 +12,9 @@ export const checkForPrize = async mobileNo => {
         }
       }
     );
-    return response.data;
   } catch (error) {
     console.log("Error - lotteryService -> checkForPrize : ", error);
   }
+  if (response.data === "") throw new Error("Something went wrong!");
+  return response.data;
 };

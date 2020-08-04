@@ -24,4 +24,4 @@ Container.propTypes = {
   padding: PropTypes.string
 };
 
-export default Container;
+export default React.memo(Container);
