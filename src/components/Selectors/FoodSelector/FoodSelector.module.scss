@@ -1,0 +1,21 @@
+@import "../../../constants/_variables.scss";
+
+.foodWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  .foodTile {
+    width: 150px;
+    height: 100px;
+    padding: 15px;
+    img {
+      height: 100%;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: $theme-bg-one;
+    }
+    &.active {
+      background-color: $theme-bg-one;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+/* List CSS - START */
+.product-list-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  &.two {
+    .tiles {
+      width: 48%;
+      margin-bottom: 5%;
+      background-color: var(--white);
+      &:not(:nth-child(2n)) {
+        margin-right: 4%;
+      }
+    }
+  }
+  &.three {
+    .tiles {
+      width: 30%;
+      margin-bottom: 5%;
+      background-color: var(--white);
+      &:not(:nth-child(3n)) {
+        margin-right: 5%;
+      }
+    }
+  }
+  &.four {
+    .tiles {
+      width: 23.5%;
+      margin-bottom: 2%;
+      background-color: var(--white);
+      &:not(:nth-child(4n)) {
+        margin-right: 2%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .product-list-wrapper {
+    &.three {
+      .tiles {
+        width: 48%;
+        &:not(:nth-child(3n)) {
+          margin-right: 0;
+        }
+        &:not(:nth-child(2n)) {
+          margin-right: 4%;
+        }
+      }
+    }
+    &.four {
+      .tiles {
+        width: 48%;
+        margin-bottom: 4%;
+        &:not(:nth-child(4n)) {
+          margin-right: 0;
+        }
+        &:not(:nth-child(2n)) {
+          margin-right: 4%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .product-list-wrapper {
+    &.three {
+      .tiles {
+        width: 100%;
+        &:not(:nth-child(3n)) {
+          margin-right: 0;
+        }
+        &:not(:nth-child(2n)) {
+          margin-right: 0%;
+        }
+      }
+    }
+    &.four {
+      .tiles {
+        width: 100%;
+        margin-bottom: 4%;
+        &:not(:nth-child(4n)) {
+          margin-right: 0;
+        }
+        &:not(:nth-child(2n)) {
+          margin-right: 0%;
+        }
+      }
+    }
+  }
+}
+/* List CSS - END */

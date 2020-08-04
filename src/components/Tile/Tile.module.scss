@@ -1,0 +1,23 @@
+@import "../../constants/_variables.scss";
+
+.tileWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  height: 100%;
+  padding: 20px;
+  .title {
+    font-size: $h4;
+  }
+  &.rightCurve {
+    border-top-right-radius: 15%;
+  }
+  .buttonWrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 40px);
+    top: calc(100% - 15px);
+  }
+}
