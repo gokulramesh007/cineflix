@@ -90,4 +90,19 @@
     }
   }
 }
+@media only screen and (max-width: 300px) {
+  .product-list-wrapper {
+    &.two {
+      .tiles {
+        width: 100%;
+        &:not(:nth-child(3n)) {
+          margin-right: 0;
+        }
+        &:not(:nth-child(2n)) {
+          margin-right: 0%;
+        }
+      }
+    }
+  }
+}
 /* List CSS - END */

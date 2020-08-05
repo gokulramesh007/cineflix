@@ -82,3 +82,32 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .homescreenWrapper {
+    padding: 5% 5% 20%;
+    header {
+      .phrase {
+        font-size: $smaller;
+      }
+    }
+    .movieListWrapper {
+      flex-direction: column;
+      height: auto;
+      max-height: none;
+      .tile,
+      .lastTile {
+        width: 100%;
+        margin-right: 0;
+      }
+      .tile{
+        &:not(:last-child){
+          margin-bottom: 10%;
+        }
+      }
+      .advertisementWrapper {
+        display: none;
+      }
+    }
+  }
+}
