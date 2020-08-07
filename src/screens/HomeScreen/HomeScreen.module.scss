@@ -79,6 +79,9 @@
         font-size: $extraLarge;
         margin: 20px 0 40px;
       }
+      button{
+        padding: 10px 20px;
+      }
     }
   }
 }
@@ -110,14 +113,15 @@
       }
     }
     .bookingConfirmationBanner {
+      height: 100vh;
+      bottom: 0;
       .banner {
         .message {
           font-size: $h3;
           margin: 20px 0;
         }
-        button{
+        button {
           width: auto;
-          padding: 10px 20px;
         }
       }
     }

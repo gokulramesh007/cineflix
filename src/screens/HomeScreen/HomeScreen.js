@@ -34,6 +34,7 @@ const HomeScreen = () => {
       .then(response => {
         console.log(response);
         if (response.booking === "success") {
+          document.body.classList.add("fixed");
           displayBanner(true);
         } else {
           alert("Something went wrong! Please try again later");
@@ -59,6 +60,7 @@ const HomeScreen = () => {
   };
 
   const handleNewBooking = () => {
+    document.body.classList.remove("fixed");
     changeBackground(Strings.APPLICATION.COLORS.BACKGROUND_ONE);
     displayBanner(false);
     setMovie({});
