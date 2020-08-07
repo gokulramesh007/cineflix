@@ -10,14 +10,22 @@ const Promotions = () => {
   const [state, dispatch] = useLotteryReducer();
 
   const handleClick = () => {
-    checkForPrize(value)
-      .then(response => {
-        dispatch({ type: "SUCCESS", payload: response.prize });
-      })
-      .catch(error => {
-        dispatch({ type: "FAILURE" });
-      });
+    if (value.length !== 10) {
+      alert("There should be 10 digits");
+    } else {
+      checkForPrize(value)
+        .then(response => {
+          dispatch({ type: "SUCCESS", payload: response.prize });
+        })
+        .catch(error => {
+          dispatch({ type: "FAILURE" });
+        });
+    }
   };
+
+  if (!state.isLoading && state.response === "") {
+    throw new DOMException(Messages.PROMOTIONS.ERROR);
+  }
 
   const handleEnter = event => {
     if (event.keyCode === 13) handleClick();
@@ -32,6 +40,7 @@ const Promotions = () => {
             </div>
             <div className={styles.checkingWrapper}>
               <input
+                type="number"
                 value={value}
                 onChange={e => setValue(e.target.value)}
                 onKeyDown={handleEnter}
@@ -46,7 +55,7 @@ const Promotions = () => {
             </div>
           </div>
         : <div className={styles.lotteryResult}>
-            {state.response === "" ? state.error : state.response}
+            {state.response}
           </div>}
     </div>
   );

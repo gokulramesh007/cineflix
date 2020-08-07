@@ -25,6 +25,11 @@
       &:focus {
         outline: none;
       }
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
     }
   }
 }
@@ -52,7 +57,7 @@
       input {
         margin: 0 0 10px;
       }
-      button{
+      button {
         padding: 10px 20px;
       }
     }

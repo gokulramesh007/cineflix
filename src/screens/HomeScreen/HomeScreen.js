@@ -4,6 +4,7 @@ import {
   Button,
   Container,
   Loader,
+  LotteryErrorBoundary,
   MovieDescription,
   MovieList,
   Promotions,
@@ -87,7 +88,9 @@ const HomeScreen = () => {
           </div>
         </header>
         <Container color="pink" padding="tinyPadding">
-          <Promotions />
+          <LotteryErrorBoundary>
+            <Promotions />
+          </LotteryErrorBoundary>
         </Container>
         <div className={styles.movieListWrapper}>
           <div className={styles.tile}>

@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Messages } from "../../constants";
+import { lotteryResult } from "../Promotions/Promotions.module.scss";
 
 class LotteryErrorBoundary extends Component {
   constructor(props) {
@@ -17,7 +19,11 @@ class LotteryErrorBoundary extends Component {
   render() {
     console.log(this.state.hasError);
     if (this.state.hasError) {
-      return <div>Something went wrong</div>;
+      return (
+        <div className={lotteryResult}>
+          {Messages.PROMOTIONS.ERROR}
+        </div>
+      );
     }
     return this.props.children;
   }
