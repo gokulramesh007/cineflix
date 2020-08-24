@@ -34,8 +34,8 @@
     position: relative;
     display: flex;
     width: 100%;
-    height: 70vh;
-    max-height: 70vh;
+    height: 650px;
+    max-height: 650px;
     margin-top: 20px;
     .tile {
       width: 25%;
@@ -78,6 +78,51 @@
       .message {
         font-size: $extraLarge;
         margin: 20px 0 40px;
+      }
+      button{
+        padding: 10px 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .homescreenWrapper {
+    padding: 5% 5% 20%;
+    header {
+      .phrase {
+        font-size: $smaller;
+      }
+    }
+    .movieListWrapper {
+      flex-direction: column;
+      height: auto;
+      max-height: none;
+      .tile,
+      .lastTile {
+        width: 100%;
+        margin-right: 0;
+      }
+      .tile {
+        &:not(:last-child) {
+          margin-bottom: 10%;
+        }
+      }
+      .advertisementWrapper {
+        display: none;
+      }
+    }
+    .bookingConfirmationBanner {
+      height: 100vh;
+      bottom: 0;
+      .banner {
+        .message {
+          font-size: $h3;
+          margin: 20px 0;
+        }
+        button {
+          width: auto;
+        }
       }
     }
   }

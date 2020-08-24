@@ -7,7 +7,7 @@ const MovieCard = ({ data, handleSelection }) => {
   const [like, visit, increaseLike, increaseVisit] = useCounter();
   const selectMovie = () => {
     increaseVisit();
-    handleSelection({ ...data, like: like, visit: visit });
+    handleSelection({ ...data, like: like, visit: visit+1 });
   };
 
   return (

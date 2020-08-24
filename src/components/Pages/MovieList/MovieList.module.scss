@@ -1,4 +1,10 @@
-.movieListWrapper{
+.movieListWrapper {
   overflow-y: scroll;
   margin: 20px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .movieListWrapper {
+    height: 60vh;
+  }
 }

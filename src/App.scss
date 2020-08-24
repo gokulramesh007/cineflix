@@ -8,3 +8,8 @@ html body {
 .hide {
   display: none;
 }
+body {
+  &.fixed {
+    overflow: hidden;
+  }
+}

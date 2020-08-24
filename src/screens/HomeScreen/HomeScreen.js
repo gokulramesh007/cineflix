@@ -4,6 +4,7 @@ import {
   Button,
   Container,
   Loader,
+  LotteryErrorBoundary,
   MovieDescription,
   MovieList,
   Promotions,
@@ -33,6 +34,7 @@ const HomeScreen = () => {
       .then(response => {
         console.log(response);
         if (response.booking === "success") {
+          document.body.classList.add("fixed");
           displayBanner(true);
         } else {
           alert("Something went wrong! Please try again later");
@@ -58,6 +60,7 @@ const HomeScreen = () => {
   };
 
   const handleNewBooking = () => {
+    document.body.classList.remove("fixed");
     changeBackground(Strings.APPLICATION.COLORS.BACKGROUND_ONE);
     displayBanner(false);
     setMovie({});
@@ -87,7 +90,9 @@ const HomeScreen = () => {
           </div>
         </header>
         <Container color="pink" padding="tinyPadding">
-          <Promotions />
+          <LotteryErrorBoundary>
+            <Promotions />
+          </LotteryErrorBoundary>
         </Container>
         <div className={styles.movieListWrapper}>
           <div className={styles.tile}>

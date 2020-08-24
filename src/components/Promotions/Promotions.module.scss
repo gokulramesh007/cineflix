@@ -25,6 +25,11 @@
       &:focus {
         outline: none;
       }
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
     }
   }
 }
@@ -34,4 +39,27 @@
   align-items: center;
   font-size: $large;
   padding: 5px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .promotionsWrapper {
+    flex-direction: column;
+    .text {
+      text-align: center;
+      font-size: $medium;
+      padding: 5px;
+    }
+    .checkingWrapper {
+      flex-direction: column;
+      width: 100%;
+      margin: 5px 0;
+      padding: 5px;
+      input {
+        margin: 0 0 10px;
+      }
+      button {
+        padding: 10px 20px;
+      }
+    }
+  }
 }
