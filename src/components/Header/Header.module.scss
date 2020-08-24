@@ -1,0 +1,28 @@
+@import "../../constants/_variables.scss";
+
+header {
+  margin-bottom: 2%;
+  text-align: center;
+  span.logo {
+    font-size: $h3;
+    color: $white;
+    margin: 10px;
+    span {
+      font-weight: bold;
+      color: $theme-pink;
+    }
+  }
+  .phrase {
+    margin: 5px 0;
+    color: $white;
+    font-size: $small;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    .phrase {
+      font-size: $smaller;
+    }
+  }
+}

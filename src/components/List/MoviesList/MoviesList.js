@@ -3,13 +3,13 @@ import PropTypes from "prop-types";
 import { MovieCard } from "../../../components";
 import "./MoviesList.scss";
 
-const MoviesList = ({ column, data, handleSelection }) => {
+const MoviesList = ({ column, data }) => {
   const _renderMovieTiles = () => {
     let productList = [];
     data.forEach(item => {
       productList.push(
         <div className="tiles" key={item.id}>
-          <MovieCard data={item} handleSelection={handleSelection} />
+          <MovieCard data={item} />
         </div>
       );
     });
@@ -33,4 +33,4 @@ MoviesList.propTypes = {
   column: PropTypes.string
 };
 
-export default React.memo(MoviesList);
+export default MoviesList;

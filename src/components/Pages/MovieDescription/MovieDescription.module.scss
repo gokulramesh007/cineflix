@@ -4,6 +4,12 @@
   overflow-y: scroll;
   height: 100%;
   margin: 10px 0;
+  .likeWrapper {
+    width: 40px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
   .viewsWrapper {
     margin: 10px 0;
     color: $theme-bg-one;

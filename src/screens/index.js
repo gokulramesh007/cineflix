@@ -1,4 +1,4 @@
-import HomeScreen from "./HomeScreen/HomeScreen";
+import { HomeScreen, MovieContext } from "./HomeScreen/HomeScreen";
 import ErrorScreen from "./ErrorScreen/ErrorScreen";
 
-export { HomeScreen, ErrorScreen };
+export { HomeScreen, ErrorScreen, MovieContext };
