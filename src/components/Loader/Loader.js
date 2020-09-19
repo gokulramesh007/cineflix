@@ -3,7 +3,6 @@ import { Images } from "../../constants";
 import "./Loader.scss";
 
 const Loader = () => {
-  console.log("Loader");
   return (
     <div className="loader-wrapper">
       <div className="loader">

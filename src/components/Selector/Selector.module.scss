@@ -1,8 +1,7 @@
-@import "../../../constants/_variables.scss";
+@import "../../constants/_variables.scss";
 
-.languageWrapper {
+.selectorWrapper {
   display: flex;
-  flex-wrap: wrap;
   .languageTile {
     padding: 10px 15px;
     color: $theme-bg-one;
@@ -21,6 +20,21 @@
     &.active {
       background-color: $theme-bg-one;
       color: $white;
+    }
+  }
+  .imageTile {
+    width: 150px;
+    height: 100px;
+    padding: 15px;
+    img {
+      height: 100%;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: $theme-bg-one;
+    }
+    &.active {
+      background-color: $theme-bg-one;
     }
   }
 }

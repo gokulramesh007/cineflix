@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 import styles from "./Button.module.scss";
 
 const Button = ({ text, size, color, theme, disabled, onClick }) => {
-  const buttonStyles = `${styles.button} ${styles[color] || ""} ${styles[theme] || ""} ${styles[
-    size
-  ] || ""}`;
+  const buttonStyles = `${styles.button} ${styles[color] || ""} ${styles[
+    theme
+  ] || ""} ${styles[size] || ""}`;
   return (
     <button
       className={buttonStyles}
@@ -15,7 +15,7 @@ const Button = ({ text, size, color, theme, disabled, onClick }) => {
       {text}
     </button>
   );
-}
+};
 
 Button.defaultProps = {
   text: "Search",

@@ -8,7 +8,8 @@ const images = {
   LOADER: require("../assets/loader.gif"),
   POSTER_NOT_FOUND: require("../assets/poster-unavailable.png"),
   POSTER_COMING_SOON: require("../assets/movie-poster-coming-soon.png"),
-  IMAGE_UNAVAILABLE: require("../assets/no-image-available.png")
+  IMAGE_UNAVAILABLE: require("../assets/no-image-available.png"),
+  LIKE: require("../assets/like.png")
 };
 
 export default images;

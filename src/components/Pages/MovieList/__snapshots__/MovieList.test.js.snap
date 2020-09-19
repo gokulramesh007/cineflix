@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render with mock data 1`] = `
+"<div class=\\"tileWrapper \\">
+  <div class=\\"title\\">All Movies</div>
+  <div class=\\"movieListWrapper\\">
+    <div class=\\"product-list-wrapper two\\">
+      <div class=\\"tiles\\">
+        <div class=\\"movieCardWrapper\\">
+          <div class=\\"imageWrapper\\"><img class=\\"image\\" src=\\"https://images-na.ssl-images-amazon.com/images/M/MV5BMjE0Mzk3OTk2NF5BMl5BanBnXkFtZTgwMTQ1NDk5NTE@._V1_SY250_CR0,0,187,250_AL_.jpg\\" alt=\\"Anand\\"></div>
+          <div class=\\"details\\">
+            <div class=\\"title\\">Anand</div>
+            <div class=\\"info\\">
+              <div class=\\"visit\\">0 Visits</div>
+              <div class=\\"like\\">0 Likes</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=\\"hide\\">
+    <div class=\\"loader-wrapper\\">
+      <div class=\\"loader\\"><img src=\\"loader.gif\\" alt=\\"Loading...\\"></div>
+    </div>
+  </div>
+  <div class=\\"buttonWrapper\\"><button class=\\"button yellow dark custom\\">LOAD MORE</button></div>
+</div>"
+`;
+
+exports[`render with no data 1`] = `
+"<div class=\\"tileWrapper \\">
+  <div class=\\"title\\">All Movies</div>
+  <div class=\\"movieListWrapper\\">
+    <div class=\\"product-list-wrapper two\\"></div>
+  </div>
+  <div>
+    <div class=\\"loader-wrapper\\">
+      <div class=\\"loader\\"><img src=\\"loader.gif\\" alt=\\"Loading...\\"></div>
+    </div>
+  </div>
+  <div class=\\"buttonWrapper\\"><button class=\\"button yellow dark custom\\">LOAD MORE</button></div>
+</div>"
+`;
