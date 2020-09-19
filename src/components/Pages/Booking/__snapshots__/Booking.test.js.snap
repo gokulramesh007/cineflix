@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render with mock data 1`] = `""`;
+
+exports[`render with no data 1`] = `
+"<div class=\\"bookingWrapper\\">
+  <div class=\\"title\\">Choose Language</div>
+  <div class=\\"title\\">Choose Food</div>
+  <div class=\\"title\\">Choose Parking</div>
+</div>"
+`;

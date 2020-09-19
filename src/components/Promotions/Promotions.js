@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "../../components";
-import { checkForPrize } from "../../services";
+import { lotteryService } from "../../services";
 import { Messages } from "../../constants";
 import { useLotteryReducer } from "../../hooks";
 import styles from "./Promotions.module.scss";
@@ -13,7 +13,8 @@ const Promotions = () => {
     if (value.length !== 10) {
       alert("There should be 10 digits");
     } else {
-      checkForPrize(value)
+      lotteryService
+        .checkForPrize(value)
         .then(response => {
           dispatch({ type: "SUCCESS", payload: response.prize });
         })
